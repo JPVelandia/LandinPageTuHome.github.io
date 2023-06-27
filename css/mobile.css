@@ -1,0 +1,343 @@
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);   
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);   
+    --padding-container: 80px 0;
+    --webkit-margin-collapse: 0;
+}
+
+body {    
+    font-family: var(--open-sans);
+}
+
+.container{
+    width: 600px;
+    min-width: 100vw;
+    max-width: 1900px;
+    overflow: hidden;
+    padding: 1.7em;
+    margin: var(--webkit-margin-collapse);
+    display: flex;
+    width: 100%;
+}
+
+
+.hero_nav{
+    margin: 0;
+    /* padding: 2% 10% 2% 2%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4B39E7;
+    box-shadow: 0px 4px 5px gray;
+}
+
+:any-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.nav-items li{
+    display: inline-block;
+    padding: 0px 0px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero_logo{
+    width: 80px;
+    padding-top: 5px;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero_logo:hover{
+    transform: scale(1.2);
+}
+
+.ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title-container{
+    margin-left: 3%;
+    align-self: flex-end;
+    align-items: baseline;
+}
+.title-container h1{
+    display: inline;
+}
+
+.title{
+    font-size: 2.5rem;
+    color: #58FFF5;
+    font-family:var(--poppins);
+    position: relative;
+}
+
+.title1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-family:var(--poppins);
+    font-weight: bold;
+    position: relative;
+}
+
+.hero_huddle{
+    width: 100%;
+    display: block;
+}
+
+.hero_main{
+    width: 100%;
+    color: var(--very-dark-cyan);
+}
+
+.hero_title, .hero_paragraph2{
+    width: 100%;
+    font-family: var(--poppins);
+    font-size: 2rem;
+    color: #4B39E7;
+    text-align: center;
+}
+
+.hero_paragraph {
+    text-align: center;
+    line-height: 1.5;
+    margin: 11px auto;
+    font-style: bold;
+    font-weight: 600;
+}
+.hero_texts{
+    display: grid;
+}
+.screen1{
+    width: 4rem;
+    place-items: center;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.colombia2{
+    width: 2em;
+    border-radius: 0.4em;
+    display: block;
+    /* margin-left: auto; */
+    margin: 0.5rem 0.3rem 0.3rem auto;
+}
+
+.image{
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+}
+
+.image_2{
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    margin-left: 30px;
+}
+
+.colombia{
+    width: 2em;
+    border-radius: 0.4em;
+    margin: 0.5rem 0.3rem;
+}
+
+.screens{
+    display: flex;
+}
+/* Zona correo --------------------------------------------------------------------------*/
+.input-container{
+    padding-top: 0%;
+    padding-bottom: 1px;
+    position: relative;
+    background-color: #4B39E7;
+    display: flex;
+}
+
+.form{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 2em 2em 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px -5px rgb(0 0 0 /30%);
+    text-align: center;
+}
+
+.form_paragraph , .missions1{
+    font-family: var(--poppins);
+    font-size: 1.8em; 
+    color: #ffffff;
+    text-align: center;
+}
+
+.form_paragraph2{
+    font-family: var(--poppins);
+    /* font-size: 4em; */
+    color: #58FFF5;
+    text-align: center;
+}
+.form_title{
+    font-family: var(--open-sans);
+}
+.form_link{
+    font-weight: 400;
+    color: #000;
+}
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+.form_group, .form_group_mail{
+    position: relative;
+    --color: #57577e;
+}
+.form_input, .form_input_mail{
+    width: 100%;
+    background: none;
+    color: #ffffff;
+    background-color: #fff;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border-radius: 2em;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family:var(--poppins) ;
+}
+
+.form_label, .form_input_mail{
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+    /* font-size: 1.5em; */
+}
+
+.form_submit1{
+    background: #58FFF5;
+    border: 1px solid #3866f2;
+    border-radius: 2.5em;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: var(--open-sans);
+    font-size: 1.2em;
+    font-weight: 900;
+    line-height: 16px;
+    /* min-height: 40px; */
+    width: 50%;
+    outline: 0;
+    padding: 12px 14px;
+    margin: 0 auto;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.form_submit1:hover{
+    background-color: initial;
+    background-position: 0 0;
+    color: #3866f2;
+}
+
+.form_submit1:active {
+    opacity: .5;
+}
+
+.aliade{
+    padding-top: 1em;
+    color: #ffffff;
+    display: block;
+    margin-left: auto;
+    text-align: end;
+    font-size: 1.2em;
+}
+/* Muy pronto para Android y iOS */
+.soon{
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.soon1, .dudas_title{
+    font-family: var(--poppins);
+    font-size: 1.5em;
+    color: #4B39E7;
+    text-align: center;
+}
+
+.soon2, p, .tellus, .missions_list{
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+.downloads{
+    width: 50%;
+    padding: 10px 0px;
+}
+/* Nuestras misiones */
+.missions{
+    margin: 1rem auto;
+    padding: 1rem auto;
+    /* text-align: center; */
+    background-color: #4B39E7;
+}
+
+.missions1 , ul{
+    margin: 1rem auto auto ;
+    color: #ffffff;
+}
+
+.missions_list{
+    /* padding-left: 10px; */
+    text-align: center;
+}
+.helper{
+    padding-bottom: 1.3rem;
+    color: #ffffff;
+    text-align: center;
+}
+/* Dudas o sugerencias */
+.dudas_sugerencias{
+    overflow: hidden;
+}
+
+.dudas_sugerencias, h1{
+
+}
+.end_imgs{
+    width: 30px;
+    padding: 0 5px;
+    float:left;
+}
+.tellus{
+    margin-top: 0.6rem;
+}
+.footer{
+    padding: 0%;
+}
